@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
@@ -7,11 +7,6 @@ import { faArrowRotateRight } from '@fortawesome/free-solid-svg-icons';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 
-import { NavbarComponent} from './navbar/navbar.component';
-
-//github link
-
-
 //document.getElementById() shortener in scr/assets/js/global.js
 declare var _: any;
 
@@ -19,16 +14,12 @@ declare var _: any;
 declare var _c: any;
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-general-tab',
+  templateUrl: './general-tab.component.html',
+  styleUrls: ['./general-tab.component.css']
 })
+export class GeneralTabComponent {
 
-export class AppComponent {
-
-  pageView = '';
-
-  title = 'app2';
   faCoffee = faCoffee;
   faGear = faGear;
   faInfoCircle = faInfoCircle;
@@ -73,5 +64,15 @@ export class AppComponent {
     }
 
   }
-  
+
+  kvpairs = [{key: 'Bus Type', val: 'PCI Express'}, {key: 'Driver Name', val: 'elrexpress'}, {key: 'Driver Version', val: '12.18.11.0'}, {key: 'ETrackID', val: '0x80000584'}, {key: 'Location', val: 'PCI Bus 130, device 0, function 0'}, {key: 'Media Type', val: 'Fiber'}, {key: 'Negotiated Link Speed', val: 'Not Supported'}, {key: 'Negotiated Link Width', val: '4x'}, {key: 'Part Number', val: 'G15811-002'}, {key: 'Permanent Ethernet Address', val: '001B21A4BE0'}, {key: 'Port', val: 'A'}]
+
+  helpInfo = `This tab displays relevant detailed information about the currently selected adapter.
+  <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }

@@ -46,7 +46,7 @@ https://www.npmjs.com/package/@fortawesome/angular-fontawesome
 <!-- <div class="container-fluid"> -->
 <!-- <div class="container"> -->
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom:-8px;">
 
   <div class="row">
     
@@ -59,6 +59,14 @@ https://www.npmjs.com/package/@fortawesome/angular-fontawesome
     </div>
 
   </div>
+
+</div>
+
+<app-navbar></app-navbar>
+
+{{pageView}}
+
+<div class="container-fluid mt-3">
 
   <div class="row">
 
@@ -104,87 +112,7 @@ https://www.npmjs.com/package/@fortawesome/angular-fontawesome
   <!-- margin-bottom:8rem; for mock-up -->
   <div style="margin-bottom:8rem;" class="row">
 
-    <div class="row cursorPointer focused">
-
-      <div class="col-6">
-
-        Intel(R) Ethernet Server Adapter I350-F4
-
-      </div>
-
-      <div class="col-6">
-
-        <fa-icon [icon]="faCircleCheck" style="color:green; "></fa-icon> Enabled
-
-      </div>
-
-    </div>
-
-    <div class="row cursorPointer focused">
-
-      <div class="col-6">
-
-        Intel(R) Ethernet Server Adapter I350-F4 #2
-
-      </div>
-
-      <div class="col-6">
-
-        <fa-icon [icon]="faCircleCheck" style="color:green; "></fa-icon> Enabled
-
-      </div>
-
-    </div>
-
-    <div class="row cursorPointer focused">
-
-      <div class="col-6">
-
-        Intel(R) Ethernet Server Adapter I350-F4 #3
-
-      </div>
-
-      <div class="col-6">
-
-        <fa-icon [icon]="faCircleCheck" style="color:green; "></fa-icon> Enabled
-
-      </div>
-
-    </div>
-
-    <div class="row cursorPointer focused">
-
-      <div class="col-6">
-
-        Intel(R) Ethernet Server Adapter I350-F4 #4
-
-      </div>
-
-      <div class="col-6">
-
-        <fa-icon [icon]="faCircleArrowDown" style="color:rgb(239, 223, 6);"></fa-icon> Disabled
-
-      </div>
-
-    </div>
-
-    <!-- <div class="col-6">
-
-      <span class="cursorPointer">Intel(R) Ethernet Server Adapter I350-F4<br></span>
-      <span class="cursorPointer">Intel(R) Ethernet Server Adapter I350-F4 #2</span><br>
-      <span class="cursorPointer">Intel(R) Ethernet Server Adapter I350-F4 #3</span><br>
-      <span class="cursorPointer">Intel(R) Ethernet Server Adapter I350-F4 #4</span><br>
-
-    </div>
-
-    <div class="col-6">
-
-      <fa-icon [icon]="faCircleCheck" style="color:green; "></fa-icon> Enabled<br>
-      <fa-icon [icon]="faCircleCheck" style="color:green;"></fa-icon> Enabled<br>
-      <fa-icon [icon]="faCircleCheck" style="color:green;"></fa-icon> Enabled<br>
-      <fa-icon [icon]="faCircleArrowDown" style="color:rgb(239, 223, 6);"></fa-icon> Disabled<br>
-
-    </div>    -->
+    <app-adapters-table></app-adapters-table>
 
   </div>
 
@@ -217,123 +145,7 @@ https://www.npmjs.com/package/@fortawesome/angular-fontawesome
       <!-- TAB START -->
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-        <!-- row 0 -->
-        <div class="row">
-
-          <!-- 9 to 7 -->
-          <div id="expTabCols" class="col-9 col-md-9 col-lg-9">
-
-            <div class="row">
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-
-                Bus Type<br>
-                <b>PCI Express</b>
-      
-              </div>
-      
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-      
-                Driver Name<br>
-                <b>e1rexpress</b>
-      
-              </div>
-      
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-      
-                Driver Version<br>
-                <b>12.18.11.0</b>
-      
-              </div>
-      
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-      
-                ETrackID<br>
-                <b>0x80000584</b>
-    
-              </div>
-    
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-      
-                Location<br>
-                <b>PCI Bus 130, device 0, function 0</b>
-    
-              </div>
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-
-                Media Type<br>
-                <b>Fiber</b>
-    
-              </div>
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-    
-                Negotiated Link Speed<br>
-                <b>Not Supported</b>
-    
-              </div>
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-    
-                Negotiated Link Width<br>
-                <b>4x</b>
-    
-              </div>
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-    
-                Part Number<br>
-                <b>G15811-002</b>
-  
-              </div>
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-    
-                Permanent Ethernet Address<br>
-                <b>001B21A4BE0</b>
-  
-              </div>
-
-              <div class="ht_8 col-12 col-md-3 col-lg-2">
-  
-                Port<br>
-                <b>A</b>
-    
-              </div>
-
-            </div>
- 
-          </div>
-          <!-- col-9 END -->
-
-          <!-- col-3 START -->
-          <div id="expHelpCol" class="col-3 col-md-3 col-lg-3 ht_16">
-
-            <div class="">
-  
-              <div class="float-end">
-
-                <fa-icon class="cursorPointer" (click)="expandHelp()" [icon]="faCircleQuestion" style="color:blue; "></fa-icon>
-              
-              </div>
-
-              <div id="expHelpContent">
-
-                This tab displays detailed information about the currently selected adapter.
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                
-              </div>
-                 
-          </div>
-          
-        </div>
-        <!-- col-3 END -->
-
-      </div>
-      <!-- row end  -->
+        <app-general-tab></app-general-tab>
 
     </div>
     <!-- TAB END -->

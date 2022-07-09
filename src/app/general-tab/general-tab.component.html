@@ -1,0 +1,107 @@
+<div class="row">
+
+  <div id="expTabCols" class="col-9 col-md-9 col-lg-9">
+
+    <div class="row">
+
+      <div *ngFor="let kvpair of kvpairs" class="ht_8 col-12 col-md-3 col-lg-2">
+          
+        {{kvpair.key}}<br>
+        <b>{{kvpair.val}}</b>
+          
+      </div> 
+          
+    </div>
+
+  </div>
+      
+  <div id="expHelpCol" class="col-3 col-md-3 col-lg-3 ht_16">
+
+    <div class="">
+  
+      <div class="float-end">
+
+        <fa-icon class="cursorPointer" (click)="expandHelp()" [icon]="faCircleQuestion" style="color:blue; "></fa-icon>
+              
+      </div>
+
+      <div id="expHelpContent" [innerHTML]="helpInfo"></div>
+                 
+    </div>
+          
+  </div>
+        
+</div>
+      
+
+
+    <!-- DEPRECATE for PROD -->
+    <!-- <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Driver Name<br>
+      <b>e1rexpress</b>
+
+    </div> -->
+
+    <!-- <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Driver Version<br>
+      <b>12.18.11.0</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      ETrackID<br>
+      <b>0x80000584</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Location<br>
+      <b>PCI Bus 130, device 0, function 0</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Media Type<br>
+      <b>Fiber</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Negotiated Link Speed<br>
+      <b>Not Supported</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Negotiated Link Width<br>
+      <b>4x</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Part Number<br>
+      <b>G15811-002</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Permanent Ethernet Address<br>
+      <b>001B21A4BE0</b>
+
+    </div>
+
+    <div class="ht_8 col-12 col-md-3 col-lg-2">
+
+      Port<br>
+      <b>A</b>
+
+    </div> -->

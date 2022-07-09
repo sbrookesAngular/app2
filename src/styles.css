@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+if using *ngFor, must put permanet class styles in src/styles.css
+I guess it has to do with rendering and scope because of *ngFor???
+
+css scopes are picky
+*/
+
+.cursorPointer:hover{
+cursor:pointer;
+}
+    
+.focused:hover{
+background-color: rgb(187, 187, 187);
+}
+
+.ht_8{
+min-height:8rem;;
+}
+    
+.ht_16{
+min-height:16rem;;
+}
+    
+#expHelpContent{
+display:none;
+background-color: rgb(255, 252, 233);
+}
+    
+/* -- Landscape-oriented smartphones and some tablets  -- */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+.ht_8{
+min-height:8rem;;
+}
+    
+.ht_16{
+min-height:16rem;;
+}
+    
+}
+    
+/* -- Portrait-oriented smartphones  -- */
+@media screen and (max-width: 575px) {
+.ht_8{
+min-height:5rem;;
+}
+    
+.ht_16{
+min-height:16rem;;
+}
+}
