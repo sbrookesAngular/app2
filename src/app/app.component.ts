@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
@@ -8,8 +8,7 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 
 import { NavbarComponent} from './navbar/navbar.component';
-
-//github link
+import { AdaptersTableComponent } from './adapters-table/adapters-table.component';
 
 
 //document.getElementById() shortener in scr/assets/js/global.js
@@ -25,8 +24,6 @@ declare var _c: any;
 })
 
 export class AppComponent {
-
-  pageView = '';
 
   title = 'app2';
   faCoffee = faCoffee;
@@ -72,6 +69,16 @@ export class AppComponent {
 
     }
 
+  }
+
+  @Output() messageEvent = new EventEmitter<string>();
+
+  adapter = '';
+
+  recAdapterSelected($event){
+
+    this.adapter = $event;
+    //console.log("app.component: " + this.adapter);
   }
   
 }

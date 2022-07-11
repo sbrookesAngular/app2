@@ -5,6 +5,13 @@ I guess it has to do with rendering and scope because of *ngFor???
 css scopes are picky
 */
 
+/* -- creates inset border for layout/flow testing -- */
+.test{
+-webkit-box-shadow:0px 0px 0px 1px black inset;
+-moz-box-shadow:0px 0px 0px 1px black inset;
+box-shadow:0px 0px 0px 1px black inset;
+}
+
 .cursorPointer:hover{
 cursor:pointer;
 }
@@ -13,12 +20,18 @@ cursor:pointer;
 background-color: rgb(187, 187, 187);
 }
 
+/* -- 
+.ht_8, .ht_16, #expHelpContent are general component styles
+bootsrap did not work correctly when placed in general-tab.components.css
+for some reason; webpack?
+-- */
+
 .ht_8{
-min-height:8rem;;
+min-height:8rem;
 }
     
 .ht_16{
-min-height:16rem;;
+min-height:16rem;
 }
     
 #expHelpContent{
@@ -28,23 +41,26 @@ background-color: rgb(255, 252, 233);
     
 /* -- Landscape-oriented smartphones and some tablets  -- */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+
 .ht_8{
-min-height:8rem;;
+min-height:8rem;
 }
     
 .ht_16{
-min-height:16rem;;
+min-height:16rem;
 }
     
 }
     
 /* -- Portrait-oriented smartphones  -- */
 @media screen and (max-width: 575px) {
+
 .ht_8{
-min-height:5rem;;
+min-height:5rem;
 }
     
 .ht_16{
-min-height:16rem;;
+min-height:16rem;
 }
+
 }

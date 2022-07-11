@@ -23,4 +23,5 @@ import { GeneralTabComponent } from './general-tab/general-tab.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
