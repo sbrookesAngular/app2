@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdaptersTableComponent } from './adapters-table/adapters-table.component';
 import { GeneralTabComponent } from './general-tab/general-tab.component';
-
+import { ADAPTERDATA2 } from './data2';
 
 @NgModule({
   declarations: [

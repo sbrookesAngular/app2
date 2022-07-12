@@ -31,7 +31,7 @@ export class AdaptersTableComponent implements OnInit {
   faCircleCheck = faCircleCheck;
   faCircleQuestion = faCircleQuestion;
 
-  adapters = [{name: 'Intel(R) Ethernet Server Adapter I350-F4', status: 'Enabled'}, {name: 'Intel(R) Ethernet Server Adapter I350-F4 #2', status: 'Enabled'}, {name: ' Intel(R) Ethernet Server Adapter I350-F4 #3', status: 'Enabled'}, {name: 'Intel(R) Ethernet Server Adapter I350-F4 #4', status: 'Disabled'}, {name: 'Intel(R) Ethernet Server Adapter I350-F4 #5', status: 'Down'}]
+  adapters = [{id:0, name: 'Intel(R) Ethernet Server Adapter I350-F4', status: 'Enabled'}, {id:1, name: 'Intel(R) Ethernet Server Adapter I350-F4 #2', status: 'Enabled'}, {id:2, name: ' Intel(R) Ethernet Server Adapter I350-F4 #3', status: 'Enabled'}, {id:3, name: 'Intel(R) Ethernet Server Adapter I350-F4 #4', status: 'Disabled'}, {id:4, name: 'Intel(R) Ethernet Server Adapter I350-F4 #5', status: 'Down'}]
 
   adapter = '';
 

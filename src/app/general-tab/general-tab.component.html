@@ -1,85 +1,97 @@
 {{adapter}}
 
-<div class="row" *ngFor="let adapterInfo of adapterData">
+<!-- https://codecraft.tv/courses/angular/built-in-directives/ngfor/ -->
+  
+<div class="row"> 
+  
+  <!-- interface version (Data.ts)
+use >   adapterInfo.xyzAbc
+no issue looping thru
+-->
 
+<!-- I don't know how to filter to get associated data & device -->
+<!-- <div class="row" *ngFor="let adapterInfo of adapterData " [value]=""> -->
+  
   <div id="expTabCols" class="col-9 col-md-9 col-lg-9">
+
+    <h2>{{adapterData[0].adapterName}}</h2>
     
     <div class="row">
 
       <div class="ht_8 col-12 col-md-3 col-lg-2">
             
         Bus Type<br>
-        <b>{{adapterInfo.busType}}</b>
+        <b>{{adapterData[0].busType}}</b>
 
       </div> 
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Driver Name<br>
-        <b>{{adapterInfo.driverName}}</b>
+        <b>{{adapterData[0].driverName}}</b>
           
       </div> 
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Driver Version<br>
-        <b>{{adapterInfo.driverVer}}</b>
+        <b>{{adapterData[0].driverVer}}</b>
           
       </div> 
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         ETrackID<br>
-        <b>{{adapterInfo.eTrackID}}</b>
+        <b>{{adapterData[0].eTrackID}}</b>
           
       </div> 
       
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Location<br>
-        <b>{{adapterInfo.location}}</b>
+        <b>{{adapterData[0].location}}</b>
           
       </div>  
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Media Type<br>
-        <b>{{adapterInfo.medType}}</b>
+        <b>{{adapterData[0].medType}}</b>
           
       </div>  
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Negotiated Link Speed<br>
-        <b>{{adapterInfo.negLinkSpd}}</b>
+        <b>{{adapterData[0].negLinkSpd}}</b>
           
       </div>  
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Negotiated Link Width<br>
-        <b>{{adapterInfo.negLinkWdth}}</b>
+        <b>{{adapterData[0].negLinkWdth}}</b>
           
       </div>  
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Part Number<br>
-        <b>{{adapterInfo.prtNum}}</b>
+        <b>{{adapterData[0].prtNum}}</b>
           
       </div>  
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Permanent Ethernet Address<br>
-        <b>{{adapterInfo.permEthAdd}}</b>
+        <b>{{adapterData[0].permEthAdd}}</b>
           
       </div>  
 
       <div class="ht_8  col-12 col-md-3 col-lg-2">
           
         Port<br>
-        <b>{{adapterInfo.port}}</b>
+        <b>{{adapterData[0].port}}</b>
           
       </div>
           
@@ -97,7 +109,7 @@
               
       </div>
 
-      <div id="expHelpContent" [innerHTML]="adapterInfo.helpInfo"></div>
+      <div id="expHelpContent" [innerHTML]="adapterData[0].helpInfo"></div>
                  
     </div>
           

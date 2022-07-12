@@ -10,7 +10,6 @@ import { faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
 import { NavbarComponent} from './navbar/navbar.component';
 import { AdaptersTableComponent } from './adapters-table/adapters-table.component';
 
-
 //document.getElementById() shortener in scr/assets/js/global.js
 declare var _: any;
 

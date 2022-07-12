@@ -1,12 +1,13 @@
 //Data.ts ---> DataInterface.ts
 //imports in DataInterface object
 
-import {DataInterface} from './DataInterface'
+import {DataInterface} from './DataInterface';
 
 export const ADAPTERDATA:  DataInterface[] = [
 
     //commented out -> need to see how CMDlets data is imported and HTML rendered
     {
+    adapterName:'Intel(R) Ethernet Server Adapter I350-F4',
     //busKey: 'Bus Type', 
     busType: 'PCI Express',
     //driverNameKey: 'Driver Name', 
